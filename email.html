@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>BRAND SHOP | Магазин мужской одежды</title>
+	<!--- SWIPER --->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230817161437" />
+	<!-- BOOTSTRAP -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230817161437" rel="stylesheet" -->
+	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230817161437">
+	<!-- Кодировка страницы -->
+	<!-- С появлением HTML5 можно использовать  -->
+	<meta charset="UTF-8">
+	<!-- Настройки адаптивности страницы  -->
+	<!-- Адаптивность  -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+	<!---maximum-scale=1.0, user-scalable=0--->
+	<!-- Отключает формирование ссылки у номера телефона на iOS -->
+	<!---<meta name="format-detection" content="telephone=no">--->
+	<link rel="shortcut icon" href="img/ico.jpg">
+	<!-- Краткое описание страницы  -->
+	<meta name="description" content="Магазин мужской одежды">
+	<!-- Ключевые слова страницы  -->
+	<meta name="keywords" content="Магазин, одежда, мужская">
+
+	<!-- Управление доступом поисковых роботов к странице -->
+	<!-- Запрет индексации страницы полностью -->
+	<!---<meta name="robots" content="none">--->
+
+	<!-- Автор страницы -->
+	<meta name="Author" content="Александр Фокин">
+	<!-- Авторские права -->
+	<meta name="Copyright" content="2023">
+	<!-- Адрес автора -->
+	<meta name="Address" content="">
+
+	<!-- локализация сайта, для русскоязычного сайта ru_RU -->
+	<meta property="og:locale" content="ru_RU">
+	<!-- тип контента, по умолчанию используется article -->
+	<meta property="og:type" content="article">
+	<!-- заголовок страницы, который будет выводится в записи социальной сети -->
+	<meta property="og:title" content="BRAND SHOP | Магазин мужской одежды">
+	<!-- описание страницы -->
+	<meta property="og:description" content="Магазин мужской одежды">
+	<!-- ссылка на изображение, которое будет публиковаться в записи -->
+	<meta property="og:image" content="../img/ico.jpg">
+	<!-- ссылка на текущую страницу -->
+	<meta property="og:url" content="">
+	<!-- название сайта -->
+	<meta property="og:site_name" content="BRAND SHOP">
+
+	<!-- Тип карты, по умолчанию используется summary -->
+	<meta name="twitter:card" content="summary">
+	<!-- Имя/логин автора -->
+	<meta name="twitter:site" content="Александр Фокин">
+	<!-- Название страницы -->
+	<meta name="twitter:title" content="BRAND SHOP">
+	<!-- Описание страницы -->
+	<meta name="twitter:description" content="Магазин мужской одежды">
+	<!-- Cсылка на изображение -->
+	<meta name="twitter:image" content="../img/ico.jpg">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="full-screen lock-padding">
+			<main class="page page_email page_center">
+				<section class="page__change change">
+					<div class='change__container _container'>
+						<div class="change__body">
+							<form action="#" method="post" class="change__form form-change">
+								<h1 class="form-change__title _title">
+									Сбросить <span> пароль</span>
+								</h1>
+								<div class="form-change__item _input _flying-input">
+									<label>Email для сброса пароля</label>
+									<input tabindex="1" type="email" required class="form-change__input">
+								</div>
+
+								<button tabindex="2" type="submit" class="form-change__button _btn">
+									Сбросить пароль
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	<article id="regPopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Регистрация</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__items">
+						<div class="form-popup__item _input _flying-input">
+							<label>Имя</label>
+							<input tabindex="1" type="text" required class="form-popup__input">
+						</div>
+						<div class="form-popup__item _input _flying-input">
+							<label>Фамилия</label>
+							<input tabindex="2" type="text" required class="form-popup__input">
+						</div>
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Имя пользователя</label>
+						<input tabindex="3" type="text" required class="form-popup__input">
+					</div>
+					<div class="form-popup__items">
+						<div class="form-popup__item _input _flying-input">
+							<label>Номер телефона</label>
+							<input tabindex="4" type="tel" required class="form-popup__input">
+						</div>
+						<div class="form-popup__item _input _flying-input">
+							<label>Почта</label>
+							<input tabindex="5" type="email" required class="form-popup__input">
+						</div>
+					</div>
+					<div class="form-popup__items">
+						<div class="form-popup__item _input _flying-input">
+							<label>Пароль</label>
+							<input tabindex="6" type="password" required class="form-popup__input password">
+						</div>
+						<div class="form-popup__item _input _flying-input">
+							<label>Подтверждение пароля</label>
+							<input tabindex="7" type="password" required class="form-popup__input password">
+						</div>
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input">
+					</div>
+					<button tabindex="8" class="form-popup__button _btn" type="submit">
+						Зарегистрироваться
+					</button>
+				</div>
+			</form>
+			<div class="popup__footer">
+				<div class="popup__link">
+					Уже есть аккаунт? <a href="#loginPopup" class="_decor open-popup">войти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<article id="loginPopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Вход</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Имя пользователя</label>
+						<input tabindex="1" type="text" required class="form-popup__input">
+					</div>
+					<div class="form-popup__items">
+						<div class="form-popup__item _input _flying-input">
+							<label>Пароль</label>
+							<input tabindex="2" type="password" required class="form-popup__input password">
+						</div>
+						<div class="form-popup__item _input _flying-input">
+							<label>Подтверждение пароля</label>
+							<input tabindex="3" type="password" required class="form-popup__input password">
+						</div>
+
+					</div>
+					<div class="form-popup__text">
+						<a href="email.html">Забыли пароль?</a>
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="4" class="form-popup__button _btn" type="submit">
+						Войти
+					</button>
+				</div>
+			</form>
+			<div class="popup__footer">
+				<div class="popup__link">
+					Еще нету аккаунта? <a href="#regPopup" class="_decor open-popup">зарегистрироваться</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<article id="fullnameProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить фамилию</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Фамилия</label>
+						<input tabindex="1" type="text" class="form-popup__input">
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Пароль</label>
+						<input tabindex="2" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="3" class="form-popup__button _btn" type="submit">
+						Сменить фамилию
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+<article id="nameProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить имя</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Имя</label>
+						<input tabindex="1" type="text" class="form-popup__input">
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Пароль</label>
+						<input tabindex="2" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="3" class="form-popup__button _btn" type="submit">
+						Сменить имя
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+<article id="emailProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить email</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Новый Email</label>
+						<input type="email" class="form-popup__input">
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Подтверждение Email</label>
+						<input required type="text" class="form-popup__input">
+					</div>
+					<div class="form-popup__text">
+						Вам на почту придёт код подтверждения, введите код в поле подтверждения
+					</div>
+					<button class="form-popup__button _btn" type="submit">
+						Сменить email
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+<article id="passwordProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить пароль</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Старый пароль</label>
+						<input tabindex="1" type="password" class="form-popup__input">
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Текущий пароль</label>
+						<input tabindex="2" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__item _input _flying-input">
+						<label>Подтверждение пароля</label>
+						<input tabindex="3" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="4" class="form-popup__button _btn" type="submit">
+						Сменить пароль
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+<article id="telProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить номер телефона</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Новый номер телефона</label>
+						<input tabindex="1" type="text" class="form-popup__input">
+					</div>
+
+					<div class="form-popup__item _input _flying-input">
+						<label>Пароль</label>
+						<input tabindex="2" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="3" class="form-popup__button _btn" type="submit">
+						Сменить номер телефона
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+<article id="userNameProfilePopup" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__body">
+			<a href="#" class="popup__close close-popup _icon-cross"></a>
+			<h2 class="popup__title _item-title">Сменить имя пользователя</h2>
+			<form action="#" method="post" class="popup__form form-popup">
+				<div class="form-popup__body">
+					<div class="form-popup__item _input _flying-input">
+						<label>Имя пользователя</label>
+						<input tabindex="1" type="text" class="form-popup__input">
+					</div>
+
+					<div class="form-popup__item _input _flying-input">
+						<label>Пароль</label>
+						<input tabindex="2" type="password" class="form-popup__input password">
+					</div>
+					<div class="form-popup__checkbox _checkbox checkbox _password-check">
+						<label class="form-popup__checkbox-text checkbox__text">Показать пароль</label>
+						<span class="form-popup__checkbox-icon checkbox__icon _icon-checkmark"></span>
+						<input type="checkbox" class="form-popup__checkbox-input checkbox__input ">
+					</div>
+					<button tabindex="3" class="form-popup__button _btn" type="submit">
+						Сменить имя пользователя
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230817161437"></script>-->
+	<script src="js/app.min.js?_v=20230817161437"></script>
+</body>
+
+</html>
