@@ -4,12 +4,12 @@
 	<!-- Заголовок страницы в браузере -->
 	<title>BRAND SHOP | Магазин мужской одежды</title>
 	<!--- SWIPER --->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230818111114" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230819195314" />
 	<!-- BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230818111114" rel="stylesheet" -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230819195314" rel="stylesheet" -->
 	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230818111114">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230819195314">
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8">
@@ -231,9 +231,22 @@
 				<section class="page__products products products_profile products_favourite">
 					<div class='products__container _container'>
 						<div class="products__body">
-							<h2 class="products__title _title">
-								Избранное
-							</h2>
+							<div class="products__header">
+								<h2 class="products__title _title with-filters">
+									Избранное
+								</h2>
+								<div class="products__filter filter-products">
+									<div class="filter-products__body">
+										<select class="filter-products__select _select">
+											<option value="price" class="filter-products__item">По цене</option>
+											<option value="letters" class="filter-products__item">По алфавиту</option>
+											<option value="season" class="filter-products__item">По сезонам</option>
+											<option value="date" class="filter-products__item">По дате</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!-- Сами товары -->
 							<div class="products__columns">
 								<article class="products__column">
 									<div class="products__item item-products">
@@ -1018,8 +1031,8 @@
 		</div>
 	</div>
 </article>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230818111114"></script>-->
-	<script src="js/app.min.js?_v=20230818111114"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230819195314"></script>-->
+	<script src="js/app.min.js?_v=20230819195314"></script>
 </body>
 
 </html>

@@ -4,12 +4,12 @@
 	<!-- Заголовок страницы в браузере -->
 	<title>BRAND SHOP | Магазин мужской одежды</title>
 	<!--- SWIPER --->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230818111114" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230819195314" />
 	<!-- BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230818111114" rel="stylesheet" -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230819195314" rel="stylesheet" -->
 	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230818111114">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230819195314">
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8">
@@ -153,34 +153,25 @@
 
 
 			<main class="page page_delivery">
-				<div data-padding-header="" class="breadcrumbs breadcrumbs_conditions">
-					<nav class="breadcrumbs breadcrumbs_@@name breadcrumbs_margin">
-	<div class='breadcrumbs__container _container'>
-		<div class="breadcrumbs__body">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item">
-					<a href="home.html" class="breadcrumbs__link">Главная</a>
-				</li>
-				
-				<li class="breadcrumbs__item">
-					/
-				</li>
-				
-				
-				
-				<li class="breadcrumbs__item">
-					<a href="return.html" class="breadcrumbs__link _active">Возврат</a>
-				</li>
-				
-				
-
-			</ul>
-		</div>
-	</div>
-</nav>
-				</div>
+				<nav data-padding-header="30px" class="breadcrumbs breadcrumbs_return">
+					<div class='breadcrumbs__container _container'>
+						<div class="breadcrumbs__body">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="home.html" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									/
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="return.html" class="breadcrumbs__link _active">Возврат</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 				<section class="page__conditions conditions">
-					<div class='conditions__container _container'>
+					<div data-tabs class='conditions__container _container'>
 						<div class="conditions__body">
 							<h1 class="conditions__title _title">
 								Условия <span> возврата</span>
@@ -214,91 +205,100 @@
 								</ul>
 							</div>
 						</div>
-						<form id="return" style="display: none;" method="post" action="#"
-							class="conditions__form form-conditions">
-							<h2 class="form-conditions__title _title">
-								Оформить <span> возврат</span>
-							</h2>
-							<div class="form-conditions__body">
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Ваше имя<span>*</span>
-									</label>
-									<input tabindex="1" type="text" required class="form-conditions__input">
-								</div>
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Номер телефона<span>*</span>
-									</label>
-									<input tabindex="2" type="tel" required class="form-conditions__input">
-								</div>
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Номер карты<span>*</span>
-									</label>
-									<input tabindex="3" type="text" required class="form-conditions__input">
-								</div>
-
-
-							</div>
-							<div class="form-conditions__text">
-								Поля отмеченные звёздочкой - обязательные <span> ! </span>
-							</div>
-							<button tabindex="4" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
-							<!-- Здесь нужно перекинуть на оплату -->
-						</form>
-						<form id="exchange" method="post" action="#" class="conditions__form form-conditions">
-							<h2 class="form-conditions__title _title">
-								Оформить <span> возврат</span>
-							</h2>
-							<div class="form-conditions__body">
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Ваше имя<span>*</span>
-									</label>
-									<input tabindex="1" type="text" required class="form-conditions__input">
-								</div>
-								<div class="form-conditions__item">
-									<button type="button" class="form-conditions__item-button _btn _icon-attach">Прикрепите фото
-										нового товара</button>
-									<input tabindex="2" type="file" class="form-conditions__input _file">
-								</div>
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Размер<span>*</span>
-									</label>
-									<input tabindex="3" type="text" required class="form-conditions__input">
-								</div>
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Адрес<span>*</span>
-									</label>
-									<input tabindex="4" type="text" required class="form-conditions__input">
-								</div>
-								<div class="form-conditions__item _input _flying-input">
-									<label>
-										Номер телефона<span>*</span>
-									</label>
-									<input tabindex="5" type="tel" required class="form-conditions__input">
-								</div>
-
-							</div>
-							<div class="form-conditions__text">
-								Поля отмеченные звёздочкой - обязательные <span> ! </span>
-							</div>
-							<button tabindex="6" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
-							<!-- Здесь нужно перекинуть на оплату -->
-						</form>
 						<!-- Здесь эти две формы меняются местами в зависимости от выбранного элемента (снизу див) -->
+
+						<div data-tabs-content class="conditions__forms">
+							<form id="return" method="post" action="#"
+								class="conditions__form form-conditions conditions__form_money">
+								<h2 class="form-conditions__title _title">
+									Оформить <span> возврат</span>
+								</h2>
+								<div class="form-conditions__body">
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Ваше имя<span>*</span>
+										</label>
+										<input tabindex="1" type="text" required class="form-conditions__input">
+									</div>
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Номер телефона<span>*</span>
+										</label>
+										<input tabindex="2" type="tel" required class="form-conditions__input">
+									</div>
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Номер карты<span>*</span>
+										</label>
+										<input tabindex="3" type="text" required class="form-conditions__input">
+									</div>
+
+
+								</div>
+								<div class="form-conditions__text">
+									Поля отмеченные звёздочкой - обязательные <span> ! </span>
+								</div>
+								<button tabindex="4" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
+								<!-- Здесь нужно перекинуть на оплату -->
+							</form>
+							<form id="exchange" method="post" action="#"
+								class="conditions__form form-conditions conditions__form_exchange _active-tab">
+								<h2 class="form-conditions__title _title">
+									Оформить <span> возврат</span>
+								</h2>
+								<div class="form-conditions__body">
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Ваше имя<span>*</span>
+										</label>
+										<input tabindex="1" type="text" required class="form-conditions__input">
+									</div>
+									<div class="form-conditions__item">
+										<button type="button" class="form-conditions__item-button _btn _icon-attach">Прикрепите
+											фото
+											нового товара</button>
+										<input tabindex="2" type="file" class="form-conditions__input _file">
+									</div>
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Размер<span>*</span>
+										</label>
+										<input tabindex="3" type="text" required class="form-conditions__input">
+									</div>
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Адрес<span>*</span>
+										</label>
+										<input tabindex="4" type="text" required class="form-conditions__input">
+									</div>
+									<div class="form-conditions__item _input _flying-input">
+										<label>
+											Номер телефона<span>*</span>
+										</label>
+										<input tabindex="5" type="tel" required class="form-conditions__input">
+									</div>
+
+								</div>
+								<div class="form-conditions__text">
+									Поля отмеченные звёздочкой - обязательные <span> ! </span>
+								</div>
+								<button tabindex="6" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
+								<!-- Здесь нужно перекинуть на оплату -->
+							</form>
+						</div>
 						<div class="conditions__choose">
 							<label class="conditions__label">
 								Выберите вариант
 							</label>
 							<select class="conditions__select select _select">
-								<option value="exchange">Обмен товара</option>
-								<option value="return">Возврат средств</option>
+								<option data-tab=".conditions__form_exchange" class="select__option _active-tab"
+									value="exchange">
+									Обмен товара
+								</option>
+								<option data-tab=".conditions__form_money" value="return">Возврат средств</option>
 							</select>
 						</div>
+
 					</div>
 				</section>
 				<section class="page__links links">
@@ -723,8 +723,8 @@
 		</div>
 	</div>
 </article>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230818111114"></script>-->
-	<script src="js/app.min.js?_v=20230818111114"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230819195314"></script>-->
+	<script src="js/app.min.js?_v=20230819195314"></script>
 </body>
 
 </html>

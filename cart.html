@@ -152,8 +152,8 @@
 	</div>
 </header>
 
-			<main class="page page_payment">
-				<nav data-padding-header="30px" class="breadcrumbs breadcrumbs_payment">
+			<main class="page page_cart">
+				<nav data-padding-header="30px" class="breadcrumbs breadcrumbs_cart">
 					<div class='breadcrumbs__container _container'>
 						<div class="breadcrumbs__body">
 							<ul class="breadcrumbs__list">
@@ -164,93 +164,312 @@
 									/
 								</li>
 								<li class="breadcrumbs__item">
-									<a href="return.html" class="breadcrumbs__link _active">Оплата</a>
+									<a href="return.html" class="breadcrumbs__link _active">Корзина</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</nav>
-				<section class="page__payment payment">
-					<div class='payment__container _container'>
-						<!-- <h1 class="payment__title _title">
-							Оплата
-						</h1> -->
-						<div data-tabs class="payment__body">
-							<div class="payment__methods methods-payment">
-								<div class="methods-payment__body">
-									<h2 class="methods-payment__title _item-title">
-										Способы оплаты
-									</h2>
-									<ul class="methods-payment__list">
-										<li class="methods-payment__item"><button data-tab=".payment__form" type="button"
-												class="methods-payment__button _active-tab _icon-card">Оплата на сайте</button></li>
-										<li class="methods-payment__item"><button data-tab=".payment__tel" type="button"
-												class="methods-payment__button _icon-phone">Оплата переводом по номеру
-												телефона</button></li>
-									</ul>
-								</div>
-							</div>
-							<div data-tabs-content class="payment__block">
-								<div class="payment__tel tel-payment _tab-item">
-									<div class="tel-payment__body">
-										<h2 class="tel-payment__title _title">
-											Оплата <span> переводом</span>
-										</h2>
-										<h3 class="form-payment__sub-title _item-title">
-											К оплате: <span class="price"> 4990</span>
-										</h3>
-										<h3 class="tel-payment__sub-sub-title">
-											Александр Фокин
-										</h3>
-										<div class="tel-payment__tel">
-											+7 (980) 692-12-25
-										</div>
-										<div class="tel-payment__text">
-											После оплаты скинуть скриншот оплаты во <a class="_decor"
-												href="https://vk.com/v1rus02">вконтакте</a>
-										</div>
-									</div>
-								</div>
-								<form action="#" class="payment__form form-payment _active-tab _tab-item" method="post">
-									<h2 class="form-payment__title _title">
-										Оплата на <span> сайте</span>
-									</h2>
-									<h3 class="form-payment__sub-title _item-title">
-										К оплате: <span class="price"> 4990</span>
-									</h3>
-									<div class="form-payment__body">
-										<div class="form-payment__item _input _flying-input">
-											<label class="form-payment__label">Номер карты<span>*</span></label>
-											<input tabindex="1" maxlength="16" type="number" class="form-payment__input">
-										</div>
-										<div class="form-payment__items">
-											<div class="form-payment__item _input _flying-input">
-												<label class="form-payment__label">Срок действия карты<span>*</span></label>
-												<input tabindex="2" maxlength="4" type="number" class="form-payment__input">
+				<section class="page__cart cart">
+					<div class='cart__container _container'>
+						<h1 class="cart__title _title">
+							Корзина
+						</h1>
+						<h2 class="cart__sub-title _item-title">
+							1 товар
+						</h2>
+						<div class="cart__body">
+							<div class="cart__wrapper">
+								<div class="cart__columns">
+									<article class="cart__column">
+										<div class="cart__item item-cart">
+											<div class="item-cart__image">
+												<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="cart-image"></picture>
 											</div>
-											<div class="form-payment__item _input _flying-input">
-												<label class="form-payment__label">CVC/CVV код<span>*</span></label>
-												<input tabindex="3" maxlength="3" type="password" class="form-payment__input">
+											<div class="item-cart__body">
+												<div class="item-cart__block item-cart__block_1">
+													<div class="item-cart__item item-cart__item_main">
+
+														<h2 class="item-cart__title _item-title">
+															Куртка
+														</h2>
+														<div class="item-cart__code">
+															Код: 123123
+														</div>
+														<a href="#" class="item-cart__link">
+															Оформить возврат
+														</a>
+														<a href="#" class="item-cart__link">
+															<!-- С классом _active сердце будет красным -->
+															Добавить в заказ
+														</a>
+														<a href="#" class="item-cart__link _icon-heart">
+															<!-- С классом _active сердце будет красным -->
+															В избранное
+														</a>
+													</div>
+												</div>
+												<div class="item-cart__block item-cart__block_2">
+													<div class="item-cart__item">
+														<h3 class="item-cart__label _item-title">
+															Размер
+														</h3>
+														<select class="item-cart__select _select">
+															<option value="40" class="item-cart__option">40</option>
+															<option value="41" class="item-cart__option">41</option>
+															<option value="42" class="item-cart__option">42</option>
+															<option value="43" class="item-cart__option">43</option>
+															<option value="44" class="item-cart__option">44</option>
+															<option value="45" class="item-cart__option">45</option>
+															<option value="46" class="item-cart__option">46</option>
+															<option value="47" class="item-cart__option">47</option>
+															<option value="48" class="item-cart__option">48</option>
+															<option value="49" class="item-cart__option">49</option>
+															<option value="50" class="item-cart__option">50</option>
+															<option value="51" class="item-cart__option">51</option>
+															<option value="52" class="item-cart__option">52</option>
+															<option value="53" class="item-cart__option">53</option>
+															<option value="54" class="item-cart__option">54</option>
+															<option value="55" class="item-cart__option">55</option>
+															<option value="56" class="item-cart__option">56</option>
+														</select>
+													</div>
+													<div class="item-cart__item">
+														<h3 class="item-cart__label _item-title">
+															Бренд:
+														</h3>
+														<div class="item-cart__value">
+															North Face
+														</div>
+													</div>
+
+												</div>
+												<div class="item-cart__block item-cart__block_3">
+													<div class="item-cart__item">
+														<h3 class="item-cart__label _item-title">
+															Цвет
+														</h3>
+														<!-- Если цветов много -->
+														<select class="item-cart__select _select">
+															<option value="yellow" class="item-cart__option">Жёлтый</option>
+															<option value="blue" class="item-cart__option">Синий</option>
+															<option value="orange" class="item-cart__option">Оранжевый</option>
+															<option value="black" class="item-cart__option">Чёрный</option>
+														</select>
+														<!-- Или если один -->
+														<!-- <div class="item-cart__value">
+														Жёлтый
+													</div> -->
+													</div>
+													<div class="item-cart__item">
+														<h3 class="item-cart__label _item-title">
+															Цена:
+														</h3>
+														<div class="item-cart__value">
+															<div class="item-cart__price item-cart__price_current price">
+																4999
+															</div>
+															<div class="item-cart__price item-cart__price_old price">
+																5990
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="item-cart__remove _icon-cross">
+
+											</a>
+										</div>
+									</article>
+									<!-- При удалении товара, выводить эту штуку -->
+									<!-- <article class="cart__column cart__column_removed">
+										<div class="cart__item item-cart">
+
+											<div class="item-cart__text">
+												Товар <span>Куртка</span> был удалён из корзины
+											</div>
+											<div class="item-cart__actions">
+												<a href="#" class="item-cart__recover">
+													восстановить
+												</a>
+												<a href="#" class="item-cart__remove _icon-cross">
+
+												</a>
 											</div>
 										</div>
-										<div class="form-payment__item _input _flying-input">
-											<label class="form-payment__label">Держатель карты</label>
-											<input tabindex="4" type="text" class="form-payment__input">
-										</div>
-										<div class="form-payment__item _input _flying-input">
-											<label class="form-payment__label">Электронная почта</label>
-											<input tabindex="5" type="email" class="form-payment__input">
-										</div>
-									</div>
-									<div class="form-payment__text">
-										Поля отмеченные звёздочкой - обязательные
-									</div>
-									<button class="form-payment__button _btn" type="submit">Оплатить <span class="price">
-											4990</span></button>
-								</form>
+									</article> -->
+								</div>
+								<div id="cartPaginator" class="cart__controls controls">
+	<ul class="controls__body">
+		<li class="controls__item ">
+			<a href="#" class="controls__link _icon-arrow-long-left">
+
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+		<li class="controls__item">
+			<a href="#" class="controls__link _active">
+				1
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+		<li class="controls__item">
+			<a href="#" class="controls__link ">
+				2
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+		<li class="controls__item">
+			<a href="#" class="controls__link ">
+				...
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+		<li class="controls__item">
+			<a href="#" class="controls__link ">
+				18
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+		<li class="controls__item ">
+			<a href="#" class="controls__link _icon-arrow-long-right">
+
+				<!-- Активная точка должна быть с классом _active -->
+			</a>
+		</li>
+	</ul>
+</div>
 							</div>
 
+							<div class="cart__controls controls-cart">
+								<div class="controls-cart__items">
+									<div class="controls-cart__item">
+										<div class="controls-cart__label _item-title">
+											Стоимость
+										</div>
+										<div class="controls-cart__value price">
+											4990
+										</div>
+									</div>
+									<div class="controls-cart__item">
+										<div class="controls-cart__label _item-title">
+											Общая скидка
+										</div>
+										<div class="controls-cart__value controls-cart__value_red  price">
+											0
+										</div>
+									</div>
+								</div>
+								<div class="controls-cart__block">
+									<h2 class="controls-cart__title">
+										Сумма<span> корзины</span>
+									</h2>
+									<div class="controls-cart__sum price">4990</div>
+
+								</div>
+								<div class="controls-cart__wrapper">
+									<h2 class="controls-cart__title">
+										Товары в заказе
+									</h2>
+									<!-- Если товар один, то нужно использовать этот вариант -->
+
+
+									<!-- А если много, то нужен слайдер, поэтому этот вариант -->
+									<div class="controls-cart__columns _swiper">
+										<div class="controls-cart__slides">
+											<article class="controls-cart__column">
+												<div class="controls-cart__point item-controls-cart">
+													<div class="item-controls-cart__image">
+														<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="item-controls-cart-image"></picture>
+													</div>
+													<div class="item-controls-cart__body">
+														<div class="item-controls-cart__item">
+															<h2 class="item-controls-cart__title _item-title">Куртка</h2>
+															<div class="item-controls-cart__price price ">
+																4990
+															</div>
+														</div>
+														<div class="item-controls-cart__item">
+															<div class="item-controls-cart__size">
+																Размер: <span> 44</span>
+															</div>
+															<div class="item-controls-cart__color">
+																Цвет: <span> Жёлтый</span>
+															</div>
+														</div>
+														<div data-counter-quantity class="item-controls-cart__counter counter">
+															<button data-counter-reduce type="button"
+																class="counter__reduce">-</button>
+															<span data-counter-value class="">1</span>
+															<button data-counter-increase="40" type="button"
+																class="counter__increase">+</button>
+														</div>
+													</div>
+													<a href="#" class="item-controls-cart__remove _icon-cross">
+
+													</a>
+												</div>
+											</article>
+											<article class="controls-cart__column">
+												<div class="controls-cart__point item-controls-cart">
+													<div class="item-controls-cart__image">
+														<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="item-controls-cart-image"></picture>
+													</div>
+													<div class="item-controls-cart__body">
+														<div class="item-controls-cart__item">
+															<h2 class="item-controls-cart__title _item-title">Куртка</h2>
+															<div class="item-controls-cart__price price ">
+																4990
+															</div>
+														</div>
+														<div class="item-controls-cart__item">
+															<div class="item-controls-cart__size">
+																Размер: <span> 44</span>
+															</div>
+															<div class="item-controls-cart__color">
+																Цвет: <span> Жёлтый</span>
+															</div>
+														</div>
+														<div data-counter-quantity class="item-controls-cart__counter counter">
+															<button data-counter-reduce type="button"
+																class="counter__reduce">-</button>
+															<span data-counter-value class="">1</span>
+															<button data-counter-increase="40" type="button"
+																class="counter__increase">+</button>
+														</div>
+													</div>
+													<a href="#" class="item-controls-cart__remove _icon-cross">
+
+													</a>
+												</div>
+											</article>
+										</div>
+									</div>
+
+									<!-- А это стрелки, они сами будут выключаться если товаров нету (только после перезагрузки страницы) -->
+									<div class="controls-cart__arrows">
+										<button class="controls-cart__arrow controls-cart__arrow_prev arrow arrow_prev"
+											type="button"></button>
+										<button class="controls-cart__arrow controls-cart__arrow_next arrow arrow_next"
+											type="button"></button>
+									</div>
+
+									<!-- Забыл отметить, если нету товаров в оформлении, то блок с оформлением стоит просто убрать 
+									его класс  -->
+								</div>
+								<div class="controls-cart__block">
+									<h2 class="controls-cart__title">
+										Сумма<span> заказа</span>
+									</h2>
+									<div class="controls-cart__sum price">4990</div>
+
+								</div>
+								<a href="delivery.html" class="controls-cart__button _btn">
+									Оформить заказ
+								</a>
+							</div>
 						</div>
+
 					</div>
 				</section>
 				<!-- Если нужен слайдер, то нужно использовать такой вариант товаров -->
@@ -258,7 +477,7 @@
 					<div class='products__container _container'>
 						<div class="products__body">
 							<h2 class="products__title _title">
-								Рекомендуем
+								Ещё товары
 							</h2>
 							<div class="products__wrapper">
 								<div class="products__columns _swiper">
