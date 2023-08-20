@@ -4,12 +4,12 @@
 	<!-- Заголовок страницы в браузере -->
 	<title>BRAND SHOP | Магазин мужской одежды</title>
 	<!--- SWIPER --->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230819195314" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230820230910" />
 	<!-- BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230819195314" rel="stylesheet" -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230820230910" rel="stylesheet" -->
 	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230819195314">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230820230910">
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8">
@@ -162,31 +162,27 @@
 									/
 								</li>
 								<li class="breadcrumbs__item">
-									<a href="return.html" class="breadcrumbs__link _active">Каталог</a>
+									<a href="catalog.html" class="breadcrumbs__link _active">Каталог</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</nav>
 				<section class="page__catalog catalog">
-					<div class="catalog__separator">
-						<aside class="catalog__sidebar sidebar">
-							<div class='sidebar__container _container'>
+					<div class="catalog__container _container">
+						<div class="catalog__separator">
+							<aside class="catalog__sidebar sidebar">
 								<div class="sidebar__body">
-									<h2 class="sidebar__title">
+									<h2 class="sidebar__title _icon-filter">
 										Фильтры
 									</h2>
-									<div data-spollers class="sidebar__filter">
-										<div class="sidebar__item">
-											<button class="sidebar__spoller" type="button" data-spoller>Тип одежды</button>
-											<div class="sidebar__block">
-												<ul data-spollers class="sidebar__list">
-													<li class="sidebar__point _checkbox checkbox">
-	<label class="sidebar__text checkbox__text">Верхняя одежда</label>
-	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-	<input type="checkbox" class="sidebar__input checkbox__input" />
-</li>
-													<ul class="sidebar__sub-list">
+									<form method="post" action="#" data-spollers class="sidebar__filter">
+										<div class="sidebar__filter-body">
+											<div class="sidebar__item">
+												<button class="sidebar__spoller" type="button" data-spoller>Выбор одежды</button>
+												<div class="sidebar__block">
+													<ul data-spollers class="sidebar__list">
+
 														<li class="sidebar__point _checkbox checkbox">
 	<label class="sidebar__text checkbox__text">Футболки</label>
 	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
@@ -207,63 +203,507 @@
 	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
 	<input type="checkbox" class="sidebar__input checkbox__input" />
 </li>
-													</ul>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Барсетки</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Кепки</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Штаны</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Худи</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Не имеет значения</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
 
-												</ul>
+													</ul>
+												</div>
+											</div>
+											<div class="sidebar__item">
+												<button class="sidebar__spoller" type="button" data-spoller>Сезон</button>
+												<div class="sidebar__block">
+													<select class="sidebar__select _select select">
+														<option value="winter" class="sidebar__option">Зима</option>
+														<option value="summer" class="sidebar__option">Лето</option>
+														<option value="autumn" class="sidebar__option">Осень</option>
+														<option value="spring" class="sidebar__option">Весна</option>
+														<option value="all" class="sidebar__option">Не имеет значения</option>
+													</select>
+												</div>
+											</div>
+											<div class="sidebar__item">
+												<button class="sidebar__spoller" type="button" data-spoller>Размер</button>
+												<div class="sidebar__block">
+													<div data-range class="sidebar__range data-range">
+														<div class="data-range__inputs _output">
+															<input type="number" maxlength="2" class="_output-item _output-item-from"
+																data-range-from="40" value="40">
+															<input type="number" maxlength="2" class="_output-item _output-item-to"
+																data-range-to="58" value="58">
+														</div>
+														<div data-range-item class="data-range-item"></div>
+													</div>
+												</div>
+											</div>
+											<div class="sidebar__item">
+												<button class="sidebar__spoller" type="button" data-spoller>Цена</button>
+												<div class="sidebar__block">
+													<ul data-spollers class="sidebar__list">
+
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">300-1000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">1000-2000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">2000-3000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">3000-4000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">4000-5000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">5000-6000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">6000-7000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">7000-8000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">8000-9000</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+														<li class="sidebar__point _checkbox checkbox">
+	<label class="sidebar__text checkbox__text">Любая цена</label>
+	<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
+	<input type="checkbox" class="sidebar__input checkbox__input" />
+</li>
+													</ul>
+												</div>
+											</div>
+											<div class="sidebar__item">
+												<button class="sidebar__spoller" type="button" data-spoller>Найти по
+													названию</button>
+												<div class="sidebar__block">
+													<div class="sidebar__element _flying-input _input">
+														<label>Поиск по названию..</label>
+														<input class="sidebar__input" type="text">
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="sidebar__item">
-											<button class="sidebar__spoller" type="button" data-spoller>Размер</button>
-											<div class="sidebar__block">
-												<ul class="sidebar__list">
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">40</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">41</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">42</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">43</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">44</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">45</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">46</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-													<li class="sidebar__point _checkbox checkbox">
-														<label class="sidebar__text checkbox__text">47</label>
-														<span class="sidebar__icon checkbox__icon _icon-checkmark"></span>
-														<input class="sidebar__input checkbox__input" />
-													</li>
-												</ul>
-											</div>
-										</div>
+										<button type="submit" class="sidebar__button _btn">
+											Показать <span>4</span> товара
+										</button>
+									</form>
+
+								</div>
+							</aside>
+							<section class="catalog__products products products_catalog">
+								<div class="products__body">
+									<h2 class="products__title _title">
+										Найдено <span>4</span> товара
+									</h2>
+									<!-- Сами товары -->
+									<div class="products__columns">
+										<article class="products__column">
+											<div class="products__item item-products">
+												<div class="item-products__labels">
+													<div class="item-products__label item-products__label_new">Новинка</div>
+													<div class="item-products__labels-body">
+														<div class="item-products__label item-products__label_discount">-10%</div>
+														<div class="item-products__label item-products__label_stock">Акция</div>
+													</div>
+													<!-- На товаре может быть несколько этикеток, допустим акция, то оставляем на товаре <div class="item-products__label products__label_stock">Акция</div>  -->
+												</div>
+												<div class="item-products__slider _swiper">
+													<div class="item-products__images">
+														<div class="item-products__image">
+															<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="products-image"></picture>
+														</div>
+													</div>
+													<div class="item-products__pagination">
+														<div class="item-products__dotts _dotts">
+
+														</div>
+													</div>
+												</div>
+												<div class="item-products__body">
+													<h3 class="item-products__title _item-title">
+														Куртка
+													</h3>
+													<a href="#" class="item-products__status _icon-heart _active">
+														<!-- В избранное или В избранном -->
+														В избранном
+														<!-- Избранное с классом _active будет красным, а текст ты должен сам менять (В избранное, в избранном) -->
+													</a>
+
+													<ul class="item-products__list">
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Сезон:
+															</div>
+															<div class="item-products__value">
+																Зима
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Размеры:
+															</div>
+															<div class="item-products__value">
+																46-54
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Производство:
+															</div>
+															<div class="item-products__value">
+																Турция
+															</div>
+														</li>
+													</ul>
+													<div class="item-products__price">
+														<div class="item-products__old-price">
+															5990
+														</div>
+														<div class="item-products__current-price">
+															4490
+														</div>
+													</div>
+													<a href="cart.html" class="item-products__button _icon-cart _btn">В корзину</a>
+												</div>
+
+										</article>
+										<article class="products__column">
+											<div class="products__item item-products">
+												<div class="item-products__labels">
+													<div class="item-products__label item-products__label_new">Новинка</div>
+													<div class="item-products__labels-body">
+														<div class="item-products__label item-products__label_discount">-10%</div>
+														<div class="item-products__label item-products__label_stock">Акция</div>
+													</div>
+													<!-- На товаре может быть несколько этикеток, допустим акция, то оставляем на товаре <div class="item-products__label products__label_stock">Акция</div>  -->
+												</div>
+												<div class="item-products__slider _swiper">
+													<div class="item-products__images">
+														<div class="item-products__image">
+															<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="products-image"></picture>
+														</div>
+													</div>
+													<div class="item-products__pagination">
+														<div class="item-products__dotts _dotts">
+
+														</div>
+													</div>
+												</div>
+												<div class="item-products__body">
+													<h3 class="item-products__title _item-title">
+														Куртка
+													</h3>
+													<a href="#" class="item-products__status _icon-heart _active">
+														<!-- В избранное или В избранном -->
+														В избранном
+														<!-- Избранное с классом _active будет красным, а текст ты должен сам менять (В избранное, в избранном) -->
+													</a>
+
+													<ul class="item-products__list">
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Сезон:
+															</div>
+															<div class="item-products__value">
+																Зима
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Размеры:
+															</div>
+															<div class="item-products__value">
+																46-54
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Производство:
+															</div>
+															<div class="item-products__value">
+																Турция
+															</div>
+														</li>
+													</ul>
+													<div class="item-products__price">
+														<div class="item-products__old-price">
+															5990
+														</div>
+														<div class="item-products__current-price">
+															4490
+														</div>
+													</div>
+													<a href="cart.html" class="item-products__button _icon-cart _btn">В корзину</a>
+												</div>
+
+										</article>
+										<article class="products__column">
+											<div class="products__item item-products">
+												<div class="item-products__labels">
+													<div class="item-products__label item-products__label_new">Новинка</div>
+													<div class="item-products__labels-body">
+														<div class="item-products__label item-products__label_discount">-10%</div>
+														<div class="item-products__label item-products__label_stock">Акция</div>
+													</div>
+													<!-- На товаре может быть несколько этикеток, допустим акция, то оставляем на товаре <div class="item-products__label products__label_stock">Акция</div>  -->
+												</div>
+												<div class="item-products__slider _swiper">
+													<div class="item-products__images">
+														<div class="item-products__image">
+															<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="products-image"></picture>
+														</div>
+													</div>
+													<div class="item-products__pagination">
+														<div class="item-products__dotts _dotts">
+
+														</div>
+													</div>
+												</div>
+												<div class="item-products__body">
+													<h3 class="item-products__title _item-title">
+														Куртка
+													</h3>
+													<a href="#" class="item-products__status _icon-heart _active">
+														<!-- В избранное или В избранном -->
+														В избранном
+														<!-- Избранное с классом _active будет красным, а текст ты должен сам менять (В избранное, в избранном) -->
+													</a>
+
+													<ul class="item-products__list">
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Сезон:
+															</div>
+															<div class="item-products__value">
+																Зима
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Размеры:
+															</div>
+															<div class="item-products__value">
+																46-54
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Производство:
+															</div>
+															<div class="item-products__value">
+																Турция
+															</div>
+														</li>
+													</ul>
+													<div class="item-products__price">
+														<div class="item-products__old-price">
+															5990
+														</div>
+														<div class="item-products__current-price">
+															4490
+														</div>
+													</div>
+													<a href="cart.html" class="item-products__button _icon-cart _btn">В корзину</a>
+												</div>
+
+										</article>
+										<article class="products__column">
+											<div class="products__item item-products">
+												<div class="item-products__labels">
+													<div class="item-products__label item-products__label_new">Новинка</div>
+													<div class="item-products__labels-body">
+														<div class="item-products__label item-products__label_discount">-10%</div>
+														<div class="item-products__label item-products__label_stock">Акция</div>
+													</div>
+													<!-- На товаре может быть несколько этикеток, допустим акция, то оставляем на товаре <div class="item-products__label products__label_stock">Акция</div>  -->
+												</div>
+												<div class="item-products__slider _swiper">
+													<div class="item-products__images">
+														<div class="item-products__image">
+															<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="products-image"></picture>
+														</div>
+														<div class="item-products__image">
+															<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.jpg" alt="products-image"></picture>
+														</div>
+													</div>
+													<div class="item-products__pagination">
+														<div class="item-products__dotts _dotts">
+
+														</div>
+													</div>
+												</div>
+												<div class="item-products__body">
+													<h3 class="item-products__title _item-title">
+														Куртка
+													</h3>
+													<a href="#" class="item-products__status _icon-heart _active">
+														<!-- В избранное или В избранном -->
+														В избранном
+														<!-- Избранное с классом _active будет красным, а текст ты должен сам менять (В избранное, в избранном) -->
+													</a>
+
+													<ul class="item-products__list">
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Сезон:
+															</div>
+															<div class="item-products__value">
+																Зима
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Размеры:
+															</div>
+															<div class="item-products__value">
+																46-54
+															</div>
+														</li>
+														<li class="item-products__point">
+															<div class="item-products__value-title">
+																Производство:
+															</div>
+															<div class="item-products__value">
+																Турция
+															</div>
+														</li>
+													</ul>
+													<div class="item-products__price">
+														<div class="item-products__old-price">
+															5990
+														</div>
+														<div class="item-products__current-price">
+															4490
+														</div>
+													</div>
+													<a href="cart.html" class="item-products__button _icon-cart _btn">В корзину</a>
+												</div>
+
+										</article>
+									</div>
+									<!-- Пагинатор должен выводиться если товаров слишком много -->
+									<div id="productsPaginator" class="products__controls controls">
+										<ul class="controls__body">
+											<li class="controls__item ">
+												<a href="#" class="controls__link _icon-arrow-long-left">
+
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+											<li class="controls__item">
+												<a href="#" class="controls__link _active">
+													1
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+											<li class="controls__item">
+												<a href="#" class="controls__link ">
+													2
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+											<li class="controls__item">
+												<a href="#" class="controls__link ">
+													...
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+											<li class="controls__item">
+												<a href="#" class="controls__link ">
+													18
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+											<li class="controls__item ">
+												<a href="#" class="controls__link _icon-arrow-long-right">
+
+													<!-- Активная точка должна быть с классом _active -->
+												</a>
+											</li>
+										</ul>
 									</div>
 								</div>
-							</div>
-						</aside>
+							</section>
+						</div>
 					</div>
+
 				</section>
 				<section class="page__links links">
 	<div class='links__container _container'>
@@ -365,6 +805,8 @@
 						<li class="menu-footer__item"><a href="favourite.html" class="menu-footer__link">Избранное</a></li>
 						<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Условия доставки</a>
 						</li>
+						<li class="menu-footer__item"><a href="return.html" class="menu-footer__link">Условия возврата</a>
+						</li>
 						<li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link">Каталог</a></li>
 						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
 						<li class="menu-footer__item"><a href="payment.html" class="menu-footer__link">Оплата</a></li>
@@ -387,8 +829,12 @@
 									<a href="#" class="contacts-footer__link _icon-whatsapp">Whatsapp</a>
 								</li>
 								<li class="contacts-footer__item">
+									<a href="https://vk.com/clothingstore37" class="contacts-footer__link _icon-vk"></a>
+								</li>
+								<li class="contacts-footer__item">
 									<a href="#" class="contacts-footer__link _icon-telegram">Telegram</a>
 								</li>
+
 							</div>
 						</ul>
 					</div>
@@ -687,8 +1133,8 @@
 		</div>
 	</div>
 </article>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230819195314"></script>-->
-	<script src="js/app.min.js?_v=20230819195314"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230820230910"></script>-->
+	<script src="js/app.min.js?_v=20230820230910"></script>
 </body>
 
 </html>

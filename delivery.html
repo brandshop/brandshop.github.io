@@ -4,12 +4,12 @@
 	<!-- Заголовок страницы в браузере -->
 	<title>BRAND SHOP | Магазин мужской одежды</title>
 	<!--- SWIPER --->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230819195314" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230820230910" />
 	<!-- BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230819195314" rel="stylesheet" -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230820230910" rel="stylesheet" -->
 	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230819195314">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230820230910">
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8">
@@ -164,7 +164,7 @@
 									/
 								</li>
 								<li class="breadcrumbs__item">
-									<a href="return.html" class="breadcrumbs__link _active">Доставка</a>
+									<a href="delivery.html" class="breadcrumbs__link _active">Доставка</a>
 								</li>
 							</ul>
 						</div>
@@ -238,137 +238,136 @@
 							</div>
 						</div>
 						<div class="conditions__wrapper">
-							<form id="delivery" method="post" action="#" class="conditions__form form-conditions">
+							<form id="delivery" method="post" action="#" class="conditions__form form-conditions _active-tab">
 
-								<h2 class="form-conditions__title _title">
-									Оформить <span> заказ</span>
-								</h2>
-								<div class="form-conditions__body">
-									<div class="form-conditions__item _input _flying-input">
-										<label>
-											Ваше имя<span>*</span>
-										</label>
-										<input tabindex="1" type="text" required class="form-conditions__input">
-									</div>
-									<!-- <div class="form-conditions__item">
-									<button type="button" class="form-conditions__item-button _btn _icon-attach">Прикрепите фото
-										товара</button>
-									<input tabindex="2" type="file" class="form-conditions__input _file">
-								</div> -->
-									<!-- <div class="form-conditions__item _input _flying-input">
-									<label>
-										Размер<span>*</span>
-									</label>
-									<input tabindex="3" type="text" required class="form-conditions__input">
-								</div> -->
-									<div class="form-conditions__item _input _flying-input">
-										<label>
-											Адрес<span>*</span>
-										</label>
-										<input tabindex="2" type="text" required class="form-conditions__input">
-									</div>
-									<div class="form-conditions__item _input _flying-input">
-										<label>
-											Номер телефона<span>*</span>
-										</label>
-										<input tabindex="3" type="tel" required class="form-conditions__input">
-									</div>
-								</div>
+	<h2 class="form-conditions__title _title">
+		Оформить <span> заказ</span>
+	</h2>
+	<div class="form-conditions__body">
+		<div class="form-conditions__item _input _flying-input">
+			<label>
+				Ваше имя<span>*</span>
+			</label>
+			<input tabindex="1" type="text" required class="form-conditions__input">
+		</div>
+		<!-- <div class="form-conditions__item">
+		<button type="button" class="form-conditions__item-button _btn _icon-attach">Прикрепите фото
+			товара</button>
+		<input tabindex="2" type="file" class="form-conditions__input _file">
+	</div> -->
+		<!-- <div class="form-conditions__item _input _flying-input">
+		<label>
+			Размер<span>*</span>
+		</label>
+		<input tabindex="3" type="text" required class="form-conditions__input">
+	</div> -->
+		<div class="form-conditions__item _input _flying-input">
+			<label>
+				Адрес<span>*</span>
+			</label>
+			<input tabindex="2" type="text" required class="form-conditions__input">
+		</div>
+		<div class="form-conditions__item _input _flying-input">
+			<label>
+				Номер телефона<span>*</span>
+			</label>
+			<input tabindex="3" type="tel" required class="form-conditions__input">
+		</div>
+	</div>
 
-								<div class="form-conditions__text">
-									Поля отмеченные звёздочкой - обязательные <span> ! </span>
-								</div>
+	<div class="form-conditions__text">
+		Поля отмеченные звёздочкой - обязательные <span> ! </span>
+	</div>
 
-								<button tabindex="4" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
-								<!-- Здесь нужно перекинуть на оплату -->
-							</form>
-							<div class="conditions__products">
-								<h2 class="conditions__title _title">
-									Информация о<span> заказе</span>
-								</h2>
-								<h3 class="conditions__sub-title _item-title">
-									1 товар
-								</h3>
-								<div class="conditions__columns">
-									<article class="conditions__column">
-										<div class="conditions__el el-conditions">
-											<div class="el-conditions__image">
-												<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="el-conditions-image"></picture>
-											</div>
-											<div class="el-conditions__body">
-												<div class="el-conditions__block">
-
-													<h2 class="el-conditions__title _item-title">
-														Куртка
-													</h2>
-													<ul class="el-conditions__list">
-														<li class="el-conditions__item">
-															<div class="el-conditions__label">
-																Размер:
-															</div>
-															<div class="el-conditions__value">
-																44
-															</div>
-														</li>
-														<li class="el-conditions__item">
-															<div class="el-conditions__label">
-																Цвет:
-															</div>
-															<div class="el-conditions__value">
-																Жёлтый
-															</div>
-														</li>
-														<li class="el-conditions__item">
-															<div class="el-conditions__label">
-																Количество:
-															</div>
-															<div class="el-conditions__value">
-																4
-															</div>
-														</li>
-													</ul>
+	<button tabindex="4" class="form-conditions__button _btn" type="submit">Оформить заказ</button>
+	<!-- Здесь нужно перекинуть на оплату -->
+</form>
+							<div class="conditions__order">
+								<div class="conditions__products">
+									<h2 class="conditions__title _title">
+										Информация о<span> заказе</span>
+									</h2>
+									<h3 class="conditions__sub-title _item-title">
+										1 товар
+									</h3>
+									<div class="conditions__columns">
+										<article class="conditions__column">
+											<div class="conditions__el el-conditions">
+												<div class="el-conditions__image">
+													<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="el-conditions-image"></picture>
 												</div>
-												<div class="el-conditions__price">
-													<div class="el-conditions__current-price price">4990</div>
-													<div class="el-conditions__old-price price">5990</div>
+												<div class="el-conditions__body">
+													<div class="el-conditions__block">
+														<h2 class="el-conditions__title _item-title">
+															Куртка
+														</h2>
+														<ul class="el-conditions__list">
+															<li class="el-conditions__item">
+																<div class="el-conditions__label">
+																	Размер:
+																</div>
+																<div class="el-conditions__value">
+																	44
+																</div>
+															</li>
+															<li class="el-conditions__item">
+																<div class="el-conditions__label">
+																	Цвет:
+																</div>
+																<div class="el-conditions__value">
+																	Жёлтый
+																</div>
+															</li>
+															<li class="el-conditions__item">
+																<div class="el-conditions__label">
+																	Количество:
+																</div>
+																<div class="el-conditions__value">
+																	4
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="el-conditions__price">
+														<div class="el-conditions__current-price price">4990</div>
+														<div class="el-conditions__old-price price">5990</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-								</div>
-								<div class="conditions__controls controls-conditions">
-									<ul class="controls-conditions__list">
-										<li class="controls-conditions__item">
-											<div class="controls-conditions__label _item-title">
-												Стоимость
-											</div>
+										</article>
+									</div>
+									<div class="conditions__controls controls-conditions">
+										<ul class="controls-conditions__list">
+											<li class="controls-conditions__item">
+												<div class="controls-conditions__label _item-title">
+													Стоимость
+												</div>
+												<div class="controls-conditions__value price">
+													5990
+												</div>
+											</li>
+											<li class="controls-conditions__item">
+												<div class="controls-conditions__label _item-title">
+													Общая скидка
+												</div>
+												<div class="controls-conditions__value controls-conditions__value_red price">
+													1000
+												</div>
+											</li>
+										</ul>
+										<div class="controls-conditions__block">
+
+											<h2 class="controls-conditions__title">
+												Всего
+											</h2>
 											<div class="controls-conditions__value price">
-												5990
+												4990
 											</div>
-										</li>
-										<li class="controls-conditions__item">
-											<div class="controls-conditions__label _item-title">
-												Общая скидка
-											</div>
-											<div class="controls-conditions__value controls-conditions__value_red price">
-												1000
-											</div>
-										</li>
-									</ul>
-									<div class="controls-conditions__block">
-
-										<h2 class="controls-conditions__title">
-											Всего
-										</h2>
-										<div class="controls-conditions__value price">
-											4990
 										</div>
 									</div>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 				</section>
 				<section class="page__links links">
@@ -471,6 +470,8 @@
 						<li class="menu-footer__item"><a href="favourite.html" class="menu-footer__link">Избранное</a></li>
 						<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Условия доставки</a>
 						</li>
+						<li class="menu-footer__item"><a href="return.html" class="menu-footer__link">Условия возврата</a>
+						</li>
 						<li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link">Каталог</a></li>
 						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
 						<li class="menu-footer__item"><a href="payment.html" class="menu-footer__link">Оплата</a></li>
@@ -493,8 +494,12 @@
 									<a href="#" class="contacts-footer__link _icon-whatsapp">Whatsapp</a>
 								</li>
 								<li class="contacts-footer__item">
+									<a href="https://vk.com/clothingstore37" class="contacts-footer__link _icon-vk"></a>
+								</li>
+								<li class="contacts-footer__item">
 									<a href="#" class="contacts-footer__link _icon-telegram">Telegram</a>
 								</li>
+
 							</div>
 						</ul>
 					</div>
@@ -793,8 +798,8 @@
 		</div>
 	</div>
 </article>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230819195314"></script>-->
-	<script src="js/app.min.js?_v=20230819195314"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230820230910"></script>-->
+	<script src="js/app.min.js?_v=20230820230910"></script>
 </body>
 
 </html>

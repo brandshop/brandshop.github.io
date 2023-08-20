@@ -4,12 +4,12 @@
 	<!-- Заголовок страницы в браузере -->
 	<title>BRAND SHOP | Магазин мужской одежды</title>
 	<!--- SWIPER --->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230819195314" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230820230910" />
 	<!-- BOOTSTRAP -->
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230819195314" rel="stylesheet" -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20230820230910" rel="stylesheet" -->
 	<!-- integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
 	<!-- Подключаем CSS -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230819195314">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230820230910">
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8">
@@ -164,7 +164,7 @@
 									/
 								</li>
 								<li class="breadcrumbs__item">
-									<a href="return.html" class="breadcrumbs__link _active">Оплата</a>
+									<a href="payment.html" class="breadcrumbs__link _active">Оплата</a>
 								</li>
 							</ul>
 						</div>
@@ -184,9 +184,12 @@
 									<ul class="methods-payment__list">
 										<li class="methods-payment__item"><button data-tab=".payment__form" type="button"
 												class="methods-payment__button _active-tab _icon-card">Оплата на сайте</button></li>
-										<li class="methods-payment__item"><button data-tab=".payment__tel" type="button"
-												class="methods-payment__button _icon-phone">Оплата переводом по номеру
-												телефона</button></li>
+										<li class="methods-payment__item">
+											<button data-tab=".payment__tel" type="button"
+												class="methods-payment__button _icon-phone">
+												Оплата переводом по номеру телефона
+											</button>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -245,16 +248,17 @@
 									<div class="form-payment__text">
 										Поля отмеченные звёздочкой - обязательные
 									</div>
-									<button class="form-payment__button _btn" type="submit">Оплатить <span class="price">
-											4990</span></button>
+									<button class="form-payment__button _btn" type="submit">
+										Оплатить
+										<span class="price">4990</span>
+									</button>
 								</form>
 							</div>
-
 						</div>
 					</div>
 				</section>
 				<!-- Если нужен слайдер, то нужно использовать такой вариант товаров -->
-				<section class="page__products products products-slider products_home products_stock">
+				<section class="page__products products products_slider products_payment products_recommendation">
 					<div class='products__container _container'>
 						<div class="products__body">
 							<h2 class="products__title _title">
@@ -764,6 +768,8 @@
 						<li class="menu-footer__item"><a href="favourite.html" class="menu-footer__link">Избранное</a></li>
 						<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Условия доставки</a>
 						</li>
+						<li class="menu-footer__item"><a href="return.html" class="menu-footer__link">Условия возврата</a>
+						</li>
 						<li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link">Каталог</a></li>
 						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
 						<li class="menu-footer__item"><a href="payment.html" class="menu-footer__link">Оплата</a></li>
@@ -786,8 +792,12 @@
 									<a href="#" class="contacts-footer__link _icon-whatsapp">Whatsapp</a>
 								</li>
 								<li class="contacts-footer__item">
+									<a href="https://vk.com/clothingstore37" class="contacts-footer__link _icon-vk"></a>
+								</li>
+								<li class="contacts-footer__item">
 									<a href="#" class="contacts-footer__link _icon-telegram">Telegram</a>
 								</li>
+
 							</div>
 						</ul>
 					</div>
@@ -1086,8 +1096,8 @@
 		</div>
 	</div>
 </article>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230819195314"></script>-->
-	<script src="js/app.min.js?_v=20230819195314"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20230820230910"></script>-->
+	<script src="js/app.min.js?_v=20230820230910"></script>
 </body>
 
 </html>
